@@ -5,3 +5,9 @@ inputs:
   GITHUB_TOKEN:
     description: "TOKEN DE ACESSO"
     required: True
+  issue-id:
+    description: "ID da issue ou PR"
+    required: True
+  comment:
+    descripotion: "Comentario a ser incluido"
+    required: True
