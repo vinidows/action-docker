@@ -11,8 +11,11 @@ inputs:
   comment:
     descripotion: "Comentario a ser incluido"
     required: True
+  GITHUB_REPOSITORY:
+    description: "ID do repositorio"
   outputs:
     comment-id:
       descripotion: "ID do comentario incluido"
-      value: ${{ steps.comment-action.outputs.comment-id }}
+  runs:
+    using:
   
