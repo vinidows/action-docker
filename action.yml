@@ -11,3 +11,8 @@ inputs:
   comment:
     descripotion: "Comentario a ser incluido"
     required: True
+  outputs:
+    comment-id:
+      descripotion: "ID do comentario incluido"
+      value: ${{ steps.comment-action.outputs.comment-id }}
+  
