@@ -1,0 +1,7 @@
+name: "Inclui um comentario"
+description: "Essa action inclui comentario em issues ou PRs"
+author: Vinicius Fonseca
+inputs:
+  GITHUB_TOKEN:
+    description: "TOKEN DE ACESSO"
+    required: True
