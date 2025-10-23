@@ -17,5 +17,11 @@ inputs:
     comment-id:
       descripotion: "ID do comentario incluido"
   runs:
-    using:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+      - '${{ inputs.GITHUB_TOKEN}}'
+      - '${{ inputs.issue-id}}'
+      - '${{ inputs.comment }}'
+      - '${{ inputs.GITHUB_REPOSITORY}}'
   
